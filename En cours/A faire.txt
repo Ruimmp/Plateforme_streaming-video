@@ -2,3 +2,8 @@ L'utilisateur pourra créer en maximum 5 comptes avec l’abonnement diamant.
 Chaque compte aura la possibilité de changer les avatar (image de compte).
 Chaque compte aura sa propre liste de favoris et des tendances différentes.
 En  début de connexion, il y aura une fenêtre avec tous les comptes pour se connecter sur le bon.
+
+
+
+
+Créer table thèeme musical
