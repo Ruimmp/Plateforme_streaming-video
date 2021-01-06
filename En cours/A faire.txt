@@ -2,7 +2,3 @@ Un compte pourra posséder maximum 5 profils utilisateur avec l’abonnement dia
 Chaque profils utilisateur aura la possibilité de changer les avatar (image de compte).
 Chaque profils utilisateur aura sa propre liste de favoris et des tendances différentes.
 En  début de connexion, il y aura une fenêtre avec tous les profils utilisateur pour se connecter sur le bon.
-
-
-choisir les verbes des associations
-contrôler les associations
