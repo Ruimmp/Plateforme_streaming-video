@@ -6,4 +6,3 @@ En  début de connexion, il y aura une fenêtre avec tous les profils utilisateu
 
 choisir les verbes des associations
 contrôler les associations
-Créer table thèeme musical
