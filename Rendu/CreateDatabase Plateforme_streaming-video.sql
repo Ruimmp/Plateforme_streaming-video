@@ -7,6 +7,7 @@
 -- -----------------------------------------------------
 
 
+
 /*
 -- aller sur master pour pouvoir supprimer "plateformeStreamingVideo"
 USE [master]
@@ -19,19 +20,17 @@ GO
 -- Supprime la base de données si elle existe
 DROP DATABASE IF EXISTS [plateformeStreamingVideo]
 
-
-
+*//*
 
 -- Crée la base de donnée
 CREATE DATABASE [plateformeStreamingVideo];
 
-
+*//*
 
 -- Aller sur "plateformeStreamingVideo"
 USE [plateformeStreamingVideo];
+
 */
-
-
 
 -- Création des tables
 
@@ -318,6 +317,7 @@ CREATE TABLE movies(
 -- Table subscriptions_has_imageResolutions
 -- -----------------------------------------------------
 CREATE TABLE subscriptions_has_imageResolutions(
+	id INT NOT NULL identity,
   subscriptions_id INT NOT NULL,
   imageResolutions_id INT NOT NULL,
   INDEX fk_subscriptions_has_imageResolutions_imageResolutions1_idx (imageResolutions_id),
@@ -334,6 +334,7 @@ CREATE TABLE subscriptions_has_imageResolutions(
 -- Table series_has_roles
 -- -----------------------------------------------------
 CREATE TABLE series_has_roles(
+	id INT NOT NULL identity,
   series_id INT NOT NULL,
   roles_id INT NOT NULL,
   INDEX fk_series_has_roles_roles1_idx (roles_id),
@@ -350,6 +351,7 @@ CREATE TABLE series_has_roles(
 -- Table episodes_has_roles
 -- -----------------------------------------------------
 CREATE TABLE episodes_has_roles(
+	id INT NOT NULL identity,
   episodes_id INT NOT NULL,
   roles_id INT NOT NULL,
   INDEX fk_episodes_has_roles_roles1_idx (roles_id),
@@ -366,6 +368,7 @@ CREATE TABLE episodes_has_roles(
 -- Table series_has_productionStudios
 -- -----------------------------------------------------
 CREATE TABLE series_has_productionStudios(
+	id INT NOT NULL identity,
   series_id INT NOT NULL,
   productionStudios_id INT NOT NULL,
   INDEX fk_series_has_productionStudios_productionStudios1_idx (productionStudios_id),
@@ -382,6 +385,7 @@ CREATE TABLE series_has_productionStudios(
 -- Table categories_has_series
 -- -----------------------------------------------------
 CREATE TABLE categories_has_series(
+	id INT NOT NULL identity,
   categories_id INT NOT NULL,
   series_id INT NOT NULL,
   INDEX fk_categories_has_series_series1_idx (series_id),
@@ -398,6 +402,7 @@ CREATE TABLE categories_has_series(
 -- Table users_has_episodes
 -- -----------------------------------------------------
 CREATE TABLE users_has_episodes(
+	id INT NOT NULL identity,
   users_id INT NOT NULL,
   episodes_id INT NOT NULL,
   INDEX fk_users_has_episodes_episodes1_idx (episodes_id),
@@ -414,6 +419,7 @@ CREATE TABLE users_has_episodes(
 -- Table roles_has_movies
 -- -----------------------------------------------------
 CREATE TABLE roles_has_movies(
+	id INT NOT NULL identity,
   roles_id INT NOT NULL,
   movies_id INT NOT NULL,
   INDEX fk_roles_has_movies_movies1_idx (movies_id),
@@ -430,6 +436,7 @@ CREATE TABLE roles_has_movies(
 -- Table productionStudios_has_movies
 -- -----------------------------------------------------
 CREATE TABLE productionStudios_has_movies(
+	id INT NOT NULL identity,
   productionStudios_id INT NOT NULL,
   movies_id INT NOT NULL,
   INDEX fk_productionStudios_has_movies_movies1_idx (movies_id),
@@ -446,6 +453,7 @@ CREATE TABLE productionStudios_has_movies(
 -- Table categories_has_movies
 -- -----------------------------------------------------
 CREATE TABLE categories_has_movies(
+	id INT NOT NULL identity,
   categories_id INT NOT NULL,
   movies_id INT NOT NULL,
   INDEX fk_categories_has_movies_movies1_idx (movies_id),
@@ -462,6 +470,7 @@ CREATE TABLE categories_has_movies(
 -- Table users_has_movies
 -- -----------------------------------------------------
 CREATE TABLE users_has_movies(
+	id INT NOT NULL identity,
   users_id INT NOT NULL,
   movies_id INT NOT NULL,
   INDEX fk_users_has_movies_movies1_idx (movies_id),
@@ -478,6 +487,7 @@ CREATE TABLE users_has_movies(
 -- Table favorites_has_movies
 -- -----------------------------------------------------
 CREATE TABLE favorites_has_movies(
+	id INT NOT NULL identity,
   favorites_id INT NOT NULL,
   movies_id INT NOT NULL,
   INDEX fk_favorites_has_movies_movies1_idx (movies_id),
@@ -494,6 +504,7 @@ CREATE TABLE favorites_has_movies(
 -- Table favorites_has_series
 -- -----------------------------------------------------
 CREATE TABLE favorites_has_series(
+	id INT NOT NULL identity,
   favorites_id INT NOT NULL,
   series_id INT NOT NULL,
   INDEX fk_favorites_has_series_series1_idx (series_id),
